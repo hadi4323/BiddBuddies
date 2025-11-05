@@ -1,0 +1,142 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
+    
+}
+
+.logo img {
+    height: 50px;
+}
+
+nav {
+    display: flex;
+    gap: 10px; 
+    margin-right: 150px;
+}
+
+nav ul {
+    display: flex;
+    gap: 10px; 
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    background-color: #F9ECEC;
+    color: black;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 10px 15px; 
+    border-radius: 20px; 
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #f2d9d9; 
+}
+
+.auth-buttons a {
+    text-decoration: none;
+    display: inline-block;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size:14px;
+    cursor: pointer;
+    text-align: center;
+    margin-left: 720px;
+}
+
+.auth-buttons .account {
+    background-color: orange;
+    color: white;
+}
+
+h1 {
+    text-align: center;
+    margin: 20px 0;
+    color: orange;
+}
+
+table {
+    width: 90%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+thead {
+    background-color: orange;
+    color: white;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+#a:hover{
+    background-color: orange;
+}
+
+.ban-btn, .unban-btn {
+    padding: 8px 12px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.ban-btn {
+    background-color: #e53935;
+}
+
+.unban-btn {
+    background-color: #4CAF50;
+}
+
+.ban-btn:hover {
+    background-color: #d32f2f;
+}
+
+.unban-btn:hover {
+    background-color: #388E3C;
+}
+
+.no-users {
+    text-align: center;
+    font-size: 18px;
+    color: #999;
+    margin-top: 20px;
+}
+
+.success {
+    text-align: center;
+    color: #4CAF50;
+    font-weight: bold;
+    margin-top: 20px;
+}

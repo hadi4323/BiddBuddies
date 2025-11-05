@@ -1,0 +1,108 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .background-blur {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5) url('../Photo/biddbuddies.jpeg') no-repeat center center/cover;
+    filter: blur(8px);
+    z-index: -1; 
+  }
+  
+  .account-settings-container {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 400px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1; 
+  }
+  
+  .header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .back-button {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #333;
+    margin-right: 10px;
+    transition: color 0.3s ease;
+    text-decoration: none;
+  }
+  
+  .back-button:hover {
+    color: #007bff; 
+  }
+  
+  #username-display {
+    font-size: 1.2rem;
+    font-weight: bold;
+    flex-grow: 1;
+  }
+  
+  h2 {
+    margin: 15px 0 10px;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  
+  .section {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .button {
+    background: #f0f0f0; 
+    color: #333;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.3s ease, border-color 0.3s ease;
+    text-decoration: none;
+  }
+  
+  .button:hover {
+    background: #d3d3d3; 
+    border-color: #bbb;
+  }
+  
+  .logout-button {
+    background: orange;
+    color: white;
+    border: none;
+    padding: 10px 30px; 
+    font-size: 1.1rem;
+    margin-top: 20px;
+    display: block; 
+    margin-left: auto; 
+    margin-right: auto; 
+    border-radius: 5px;
+    width: fit-content;
+    text-decoration: none; 
+  }
+  
+  .logout-button:hover {
+    background: darkorange;
+  }
+  

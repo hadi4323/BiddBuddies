@@ -1,0 +1,168 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+  }
+ /* Header Styles */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #fff;
+  border-bottom: 1px solid #ccc;
+  
+}
+
+.logo img {
+  height: 50px;
+}
+
+nav {
+  display: flex;
+  gap: 10px; 
+  margin-right:50px;
+  
+}
+
+nav ul {
+  display: flex;
+  gap: 10px; 
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  margin: 0;
+}
+
+nav ul li a {
+  text-decoration: none;
+  background-color: #F9ECEC;
+  color: black;
+  font-weight: bold;
+  font-size: 14px;
+  padding: 10px 15px; 
+  border-radius: 20px; 
+  transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+  background-color: #f2d9d9; 
+}
+
+.auth-buttons a {
+  text-decoration: none;
+  display: inline-block;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-size:14px;
+  cursor: pointer;
+  text-align: center;
+  margin-left: 650px;
+}
+
+.auth-buttons .account {
+  background-color: orange;
+  color: white;
+  margin-left: 750px;
+}
+
+.auth-buttons .login {
+  background-color: orange;
+  color: white;
+  margin: auto;
+}
+
+.auth-buttons .signup {
+  background-color: orange;
+  color: white;
+}
+
+  /* About Page Container */
+  .about-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Header Section */
+  .about-header {
+    text-align: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .about-header h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #ff9800;
+  }
+  
+  .about-header p {
+    font-size: 1.2rem;
+    color: #666;
+  }
+  
+  /* Content Section */
+  .about-content {
+    padding: 20px 0;
+  }
+  
+  .about-content h2 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .about-content p {
+    margin-bottom: 20px;
+  }
+  
+  .about-content ul {
+    list-style: disc inside;
+    padding-left: 20px;
+  }
+  
+  .about-content ul li {
+    margin-bottom: 10px;
+  }
+  
+  /* Footer */
+footer {
+    background-color: #5c4033;
+    color: white;
+    padding: 20px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 12px;
+}
+
+.help-links a, .contact-info p {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.social-media a img {
+    width: 48px;
+    height: 48px;
+    margin: 0 5px;
+}

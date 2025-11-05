@@ -1,0 +1,379 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: calc(1rem + 0.5vw); /* Font scales with screen width */
+}
+
+/* Header Styles */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #fff;
+  border-bottom: 1px solid #ccc;
+  
+}
+
+.logo img {
+  height: 50px;
+}
+
+nav {
+  display: flex;
+  gap: 10px; 
+  margin-right:50px;
+  
+}
+
+nav ul {
+  display: flex;
+  gap: 10px; 
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  margin: 0;
+}
+
+nav ul li a {
+  text-decoration: none;
+  background-color: #F9ECEC;
+  color: black;
+  font-weight: bold;
+  font-size: 14px;
+  padding: 10px 15px; 
+  border-radius: 20px; 
+  transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+  background-color: #f2d9d9; 
+}
+
+.auth-buttons a {
+  text-decoration: none;
+  display: inline-block;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-size:14px;
+  cursor: pointer;
+  text-align: center;
+  margin-left: 650px;
+}
+
+.auth-buttons .account {
+  background-color: orange;
+  color: white;
+  margin-left: 750px;
+}
+
+.auth-buttons .login {
+  background-color: orange;
+  color: white;
+  margin: auto;
+}
+
+.auth-buttons .signup {
+  background-color: orange;
+  color: white;
+}
+
+
+.auction-card {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 300px;
+  position: relative;
+}
+
+.auction-photo {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.auction-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.auction-description {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+.auction-category,
+.auction-location,
+.auction-starting-bid,
+.auction-current-bid,
+.auction-bid-increment,
+.auction-end-time {
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.auction-status {
+  font-size: 14px;
+  font-weight: bold;
+  color: #007bff;
+}
+
+.winner-info {
+  font-size: 14px;
+  font-weight: bold;
+  color: #ff5722;
+  margin-top: 10px;
+}
+
+.bid-now-btn {
+  padding: 10px 15px;
+  font-size: 14px;
+  color: white;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.bid-now-btn:hover {
+  background-color: #218838;
+}
+
+.auction-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr; 
+  gap: 20px;
+  padding: 20px;
+  margin: 0 auto; 
+  max-width: 1200px; 
+}
+.auction-card:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+
+
+  
+  .post-auction-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: orange;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .post-auction-btn:hover {
+    background-color: #218838;
+  }
+  
+  .auction-form-modal {
+    display: none; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+  }
+  
+  .auction-form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 500px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); 
+    text-align: left; 
+  }
+  
+  
+  .form-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+  }
+  
+  .form-column {
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .auction-form input,
+  .auction-form textarea,
+  .auction-form select,
+  .auction-form button {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .auction-form textarea {
+    height: 70px;
+    resize: none;
+  }
+  
+  .form-submit-btn {
+    background-color: orange;
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  .form-submit-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  .close-modal-btn {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+    width: 100%;
+  }
+  
+  .close-modal-btn:hover {
+    background-color: #cc0000;
+  }
+  
+ 
+#deleteSelectedAuctions {
+    position: fixed;
+    bottom: 70px; 
+    right: 20px;
+    padding: 10px 15px;
+    background-color: #ac1919;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 1000;
+  }
+  
+  #deleteSelectedAuctions:hover {
+    background-color: #c82333;
+  }
+  
+ 
+  
+  
+  
+ 
+  .auction-post {
+    position: relative;
+  }
+  .delete-checkbox {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    transform: scale(1.5); /* Makes the checkbox larger for better visibility */
+    cursor: pointer;
+    
+  }
+  
+  .favorite-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 1.5rem; /* Adjust size of the heart */
+    cursor: pointer;
+    color: #ccc; /* Default color for the button */
+    transition: color 0.3s ease;
+  }
+  
+  .favorite-btn.favorited {
+    color: red; /* Change to red when favorited */
+  }
+  
+  .favorite-btn:hover {
+    color: #ff6666; /* Slightly lighter red on hover */
+  }
+  
+  
+  
+ 
+  .filter-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px auto;
+    max-width: 1200px;
+    gap: 10px;
+  }
+  
+  #searchBar {
+    flex: 2;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-right: 10px;
+    min-width: 250px;
+  }
+  
+  #categoryFilter,
+  #locationFilter {
+    flex: 1;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    min-width: 150px;
+  }
+  /* Footer */
+footer {
+    background-color: #5c4033;
+    color: white;
+    padding: 20px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 12px;
+}
+
+.help-links a, .contact-info p {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.social-media a img {
+    width: 48px;
+    height: 48px;
+    margin: 0 5px;
+}  

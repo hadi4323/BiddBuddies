@@ -1,0 +1,379 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: calc(1rem + 0.5vw); /* Font scales with screen width */
+}
+
+
+/* Header Styles */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #fff;
+  border-bottom: 1px solid #ccc;
+  
+}
+
+.logo img {
+  height: 50px;
+}
+
+nav {
+  display: flex;
+  gap: 10px; 
+  margin-right:50px;
+  
+}
+
+nav ul {
+  display: flex;
+  gap: 10px; 
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  margin: 0;
+}
+
+nav ul li a {
+  text-decoration: none;
+  background-color: #F9ECEC;
+  color: black;
+  font-weight: bold;
+  font-size: 14px;
+  padding: 10px 15px; 
+  border-radius: 20px; 
+  transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+  background-color: #f2d9d9; 
+}
+
+.auth-buttons a {
+  text-decoration: none;
+  display: inline-block;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-size:14px;
+  cursor: pointer;
+  text-align: center;
+  margin-left: 650px;
+}
+
+.auth-buttons .account {
+  background-color: orange;
+  color: white;
+  margin-left: 750px;
+}
+
+.auth-buttons .login {
+  background-color: orange;
+  color: white;
+  margin: auto;
+}
+
+.auth-buttons .signup {
+  background-color: orange;
+  color: white;
+}
+  
+  .propose-trade-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: orange;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .propose-trade-btn:hover {
+    background-color: #218838;
+  }
+  
+  #deleteSelectedTrades {
+    position: fixed;
+    bottom: 70px;
+    right: 20px;
+    padding: 10px 15px;
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 1000;
+  }
+  
+  #deleteSelectedTrades:hover {
+    background-color: #c82333;
+  }
+  
+  
+  .trade-card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    position: relative;
+  }
+  
+  .trade-photo {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .trade-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .trade-description {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 15px;
+  }
+  
+  .trade-contact_info,
+  .trade-preferred-item,
+  .trade-category,
+  .trade-location,
+  .trade-created-at {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .trade-status {
+    font-size: 14px;
+    font-weight: bold;
+    color: #007bff;
+  }
+  
+  .mark-done-btn {
+    padding: 10px 15px;
+    font-size: 14px;
+    color: white;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .mark-done-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  .trade-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 1200px;
+  }
+  
+  .trade-card:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+  }
+  
+  
+  .trade-form-modal {
+    display: none; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; 
+  }
+  
+  
+  .trade-form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 90%; 
+    max-width: 400px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: left;
+  }
+  
+  .trade-form h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #333;
+    text-align: center;
+  }
+  
+  .trade-form label {
+    font-size: 14px;
+    font-weight: bold;
+    color: #555;
+    margin-bottom: 5px;
+    display: block;
+  }
+  
+  .trade-form input,
+  .trade-form textarea,
+  .trade-form button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    box-sizing: border-box;
+  }
+  
+  .trade-form input:focus,
+  .trade-form textarea:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+  
+  .trade-form textarea {
+    resize: none;
+    height: 100px; 
+  }
+  
+  .form-submit-btn {
+    background-color: orange;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+  }
+  
+  .form-submit-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  .close-modal-btn {
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 10px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .close-modal-btn:hover {
+    background-color: #c82333;
+  }
+ 
+  .auction-post {
+    position: relative;
+  }
+  .delete-checkbox {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    transform: scale(1.5); /* Makes the checkbox larger for better visibility */
+    cursor: pointer;
+    
+  }
+  
+  .favorite-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 1.5rem; /* Adjust size of the heart */
+    cursor: pointer;
+    color: #ccc; /* Default color for the button */
+    transition: color 0.3s ease;
+  }
+  
+  .favorite-btn.favorited {
+    color: red; /* Change to red when favorited */
+  }
+  
+  .favorite-btn:hover {
+    color: #ff6666; /* Slightly lighter red on hover */
+  }
+
+  .filter-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px auto;
+    max-width: 1200px;
+    gap: 10px;
+  }
+  
+  #searchBar {
+    flex: 2;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-right: 10px;
+    min-width: 250px;
+  }
+  
+  #categoryFilter,
+  #locationFilter {
+    flex: 1;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    min-width: 150px;
+  }
+  /* Footer */
+footer {
+    background-color: #5c4033;
+    color: white;
+    padding: 20px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 12px;
+}
+
+.help-links a, .contact-info p {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.social-media a img {
+    width: 48px;
+    height: 48px;
+    margin: 0 5px;
+}
